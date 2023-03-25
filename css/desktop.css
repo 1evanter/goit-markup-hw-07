@@ -1,0 +1,35 @@
+@media screen and (min-width:1440px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .section {
+        padding: 120px 0;
+    }
+
+    .description {
+        font-weight: 400;
+    }
+
+    .subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .features {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+
+    .features-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+
+}

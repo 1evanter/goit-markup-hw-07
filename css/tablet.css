@@ -1,0 +1,36 @@
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 766px;
+    }
+
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .features-item {
+        width: calc((100% - 24px) / 2);
+
+    }
+
+    .features-subtitle {
+        text-align: start;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-container {
+        max-width: 582px;
+    }
+
+}
