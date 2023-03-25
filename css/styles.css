@@ -42,10 +42,12 @@ body {
 }
 
 .subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
     color: var(--main-title-color);
 }
 
@@ -62,10 +64,10 @@ body {
 }
 
 .description {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
 }
 
 .visually-hidden {
@@ -84,15 +86,14 @@ body {
 
 .container {
     /* outline: 2px solid red; */
-    max-width: 1158px;
+    /* max-width: 1158px; */
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .section {
-    padding: 120px 0;
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
+    padding: 96px 0;
 }
 
 h1,
@@ -245,7 +246,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 
@@ -283,15 +283,18 @@ img {
 
 /* ------------features------------- */
 
-.features-list {
-    display: flex;
-    gap: 24px;
+.features {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .features-item {
-    width: calc((100% - 72px) / 4);
-
+    width: 100%;
 }
+
+/* .features-item:not(:last-child) {
+    margin-bottom: 72px;
+} */
 
 .features-icon {
     display: flex;
@@ -344,6 +347,8 @@ img {
 /* --------------team---------------- */
 
 .team {
+
+    /* padding: 96px 82px; */
     background-color: var(--background-color);
 }
 
@@ -353,19 +358,20 @@ img {
 }
 
 .team-subtitle {
-    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 8px;
 }
 
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
+/* .team-item {
+    outline: 2px solid blue;
+    width: 100%;
+} */
 
-.team-item {
-    /* outline: 2px solid blue; */
-    width: calc((100% - 72px) / 4);
+
+.team-item-img {
+    width: 100%;
 }
 
 .team-names {
@@ -373,9 +379,11 @@ img {
     padding: 32px 16px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-item-descr {
+    font-weight: 400;
     text-align: center;
 }
 
@@ -437,7 +445,6 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
-
 }
 
 .customers-item {
