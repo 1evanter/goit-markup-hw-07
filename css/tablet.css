@@ -3,10 +3,26 @@
         max-width: 766px;
     }
 
+    /* hero */
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tab-hero-bg-1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tab-hero-bg-2x.jpg);
+        }
+    }
+
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
     }
+
+    /* features */
 
     .features-list {
         display: flex;
@@ -23,6 +39,8 @@
         text-align: start;
     }
 
+    /* team */
+
     .team-list {
         display: flex;
         flex-wrap: wrap;
@@ -37,6 +55,8 @@
     .team-container {
         max-width: 582px;
     }
+
+    /* customers */
 
     .customers-container {
         max-width: 582px;
@@ -53,5 +73,12 @@
 
     .customers-link {
         width: 168px;
+    }
+
+    /* modal */
+
+    .modal {
+        min-width: 408px;
+        min-height: 586px;
     }
 }

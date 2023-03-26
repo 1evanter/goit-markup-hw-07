@@ -243,10 +243,18 @@ img {
     margin: 0 auto;
     width: 100%;
     /* max-width: 1440px; */
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mob-hero-bg-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mob-hero-bg-2x.jpg);
+    }
 }
 
 
@@ -255,7 +263,7 @@ img {
     margin: 0 auto 48px;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
@@ -268,7 +276,6 @@ img {
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
-
     color: var(--white-color);
     background-color: var(--accent-color);
     border: 1px solid transparent;
@@ -298,19 +305,7 @@ img {
 } */
 
 .features-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
-    background-color: var(--background-color);
-    max-width: 264px;
-    height: 112px;
-    border-radius: 4px;
-}
-
-.features-icon-svg {
-    width: 64px;
-    height: 64px;
+    display: none;
 }
 
 .features-subtitle {
@@ -320,34 +315,13 @@ img {
 
 /* -------------functions----------- */
 
-
-
-.functions-title {
-    margin-bottom: 72px;
+.functions {
+    display: none;
 }
-
-.functions-list {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 24px;
-
-}
-
-
-.functions-item {
-    /* outline: 2px solid blue; */
-    width: calc((100% - 48px) / 3);
-
-}
-
 
 /* --------------team---------------- */
 
 .team {
-
-    /* padding: 96px 82px; */
     background-color: var(--background-color);
 }
 
@@ -362,11 +336,6 @@ img {
     line-height: 1.2;
     margin-bottom: 8px;
 }
-
-/* .team-item {
-    outline: 2px solid blue;
-    width: 100%;
-} */
 
 
 .team-item-img {
@@ -769,8 +738,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    min-width: 408px;
-    min-height: 576px;
+    min-width: 300px;
+    min-height: 586px;
     padding: 24px;
     background-color: var(--modal-bg-color);
     border-radius: 4px;
@@ -925,7 +894,7 @@ img {
     align-items: center;
     margin-top: 16px;
     /* margin-bottom: 24px; */
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--form-label-color);
