@@ -1,8 +1,27 @@
-@media screen and (min-width:428px) {
+@media screen and (min-width:480px) {
     .container {
         max-width: 426px;
     }
 
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 16px;
+        row-gap: 72px;
+    }
+
+    .customers-item {
+        width: calc((100% - 16px) / 2);
+
+    }
+}
+
+@media screen and (max-width:479px) {
+
+    .customers-item:not(:last-child) {
+        margin-bottom: 36px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -16,7 +35,7 @@
 
 }
 
-@media screen and (max-width:1439px) {
+@media screen and (max-width:1199px) {
     .features-icon {
         display: none;
     }
@@ -28,6 +47,5 @@
     .functions {
         display: none;
     }
-
 
 }
