@@ -235,6 +235,13 @@
         display: none;
     }
 
+
+    /* features */
+
+    .features-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
     /* team */
 
     .team-item:not(:last-child) {
@@ -279,6 +286,10 @@
     .header-container {
         padding-top: 13px;
         padding-bottom: 13px;
+    }
+
+    .features-list {
+        row-gap: 72px;
     }
 
     .footer-container {
