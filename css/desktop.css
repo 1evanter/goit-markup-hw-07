@@ -17,6 +17,28 @@
         line-height: 1.2;
     }
 
+    /* header */
+
+    .header-logo {
+        margin-right: 76px;
+    }
+
+    .address-list {
+        flex-direction: row;
+
+    }
+
+    .address-mail,
+    .address-tel {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 24px 0;
+    }
+
+    .address-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
     /*hero */
 
     .hero {
@@ -31,6 +53,10 @@
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desk-hero-bg-2x.jpg);
         }
+    }
+
+    .hero-title {
+        max-width: 530px;
     }
 
     /* features */
@@ -73,13 +99,10 @@
 
     .functions-list {
         display: flex;
-
         flex-wrap: wrap;
-
         gap: 24px;
 
     }
-
 
     .functions-item {
         /* outline: 2px solid blue; */
@@ -99,10 +122,37 @@
         width: calc((100% - 24px*5) / 6);
     }
 
+    /* footer */
+
+    .footer {
+        padding: 100px 0;
+    }
+
+    .footer-leftpart {
+        margin-right: 120px;
+    }
+
+    .footer-rightpart {
+        margin-right: 80px;
+    }
+
     /* modal */
 
     .modal {
 
         min-height: 588px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    /* features */
+
+    .features-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
+    .address-item:not(:last-child) {
+        margin-bottom: 11px;
     }
 }
