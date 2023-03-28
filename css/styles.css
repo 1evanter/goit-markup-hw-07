@@ -783,7 +783,9 @@ img {
 
 }
 
-
+.portfolio-item-img {
+    width: 100%;
+}
 
 .portfolio-overlay {
     position: relative;
