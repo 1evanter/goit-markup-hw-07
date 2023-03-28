@@ -87,4 +87,8 @@
     .footer-input {
         width: 398px;
     }
+
+    .portfolio-btn-list {
+        max-width: 311px;
+    }
 }

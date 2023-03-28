@@ -196,6 +196,34 @@
         min-width: 408px;
         min-height: 586px;
     }
+
+    /* -----------portfolio----------- */
+
+    .portfolio {
+        padding-top: 64px;
+    }
+
+    .portfolio-btn-list {
+        margin-bottom: 64px;
+        flex-wrap: nowrap;
+        row-gap: 24px;
+        justify-content: center;
+    }
+
+    .portfolio-btn {
+        padding: 12px 24px;
+    }
+
+    .portfolio-img-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 24px) / 2);
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -238,6 +266,12 @@
     .footer-form-label {
         text-align: center;
     }
+
+    /* ---------portfolio----------- */
+    .portfolio-item:not(:last-child) {
+        margin-bottom: 48px;
+    }
+
 
 }
 

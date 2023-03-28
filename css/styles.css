@@ -737,18 +737,20 @@ img {
 /* ----------------portfolio--------------- */
 
 .portfolio {
-    padding-top: 96px;
+    padding-top: 48px;
 }
 
 .portfolio-btn-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 72px;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* justify-content: start; */
+    margin-bottom: 48px;
+    column-gap: 24px;
+    row-gap: 16px;
 }
 
 .portfolio-btn {
-    padding: 12px 24px;
+    padding: 8px 16px;
     color: var(--accent-color);
     background-color: var(--background-color);
     border: 1px solid var(--second-background-color);
@@ -766,20 +768,22 @@ img {
     border: 1px solid transparent;
 }
 
-.portfolio-img-list {
+/* .portfolio-img-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 
-}
+} */
 
 .portfolio-item {
     position: relative;
-    width: calc((100% - 48px) / 3);
+    width: 100%;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
 }
+
+
 
 .portfolio-overlay {
     position: relative;
@@ -824,11 +828,17 @@ img {
 }
 
 .portfolio-img-subtitle {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     margin-bottom: 8px;
-    color: var(--main-title-color);
+    /* color: var(--main-title-color); */
 }
 
 .portfolio-descr {
+    font-weight: 400;
     color: var(--text-color);
 }
 
